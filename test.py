@@ -9,7 +9,7 @@ import torch
 from torch import nn, sigmoid
 from torch.utils.data import DataLoader
 
-from model import UNet3D
+from model import UNet
 from dataset import MRIDataset
 from utils import Report, transfer_weights
 """

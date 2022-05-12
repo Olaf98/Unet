@@ -36,7 +36,7 @@ parser.add_argument('--dump_name',
                     help='name dump file to avoid overwrting files.')
 args = parser.parse_args(argv)
 
-net = UNet3D(1, 1, use_bias=True, inplanes=16)
+net = UNet(1, 1)
 transfer_weights(net, args.model_path)
 net.cuda()
 net.train(False)
